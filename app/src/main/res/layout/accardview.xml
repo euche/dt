@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ac_cardview"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp"
+
+
+    card_view:contentPadding="1dp">
+
+
+    <!--android:layout_margin="0dp" -->
+    <!--
+
+    card_view:cardMaxElevation="1dp"
+    card_view:cardElevation="1dp"
+
+
+    To remove CardView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:srcCompat="@drawable/jcolebornsinner"
+
+
+
+    then add..
+
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp"
+
+
+    -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/acImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="Born Sinner"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/song_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="J Cole"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

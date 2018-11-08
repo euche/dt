@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".custom.fragments.homeFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="90dp"
+        >
+<!--75dp -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Recently Played "
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Listen to your recently played songs. "
+            android:textSize="14sp"
+            android:textColor="@color/colorAccent"
+
+          />
+
+        <android.support.v7.widget.RecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/acSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="8dp"
+
+
+
+            />
+
+<!-- android:scrollbars="horizontal"
+            android:scrollbarSize="0dp"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" New Releases "
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:orientation="horizontal"
+                android:id="@+id/recent_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="15dp"
+                android:paddingLeft="8dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chartsid"
+                android:text=" Charts "
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="chartsup"
+
+                />
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="150dp" android:paddingTop="15dp" android:orientation="horizontal">
+
+
+                <ImageView
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/billoardtop1"
+                    android:paddingLeft="8dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" Billboard top 100"
+                    android:layout_gravity="bottom"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="60dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/albumsid"
+                android:text=" Albums "
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:clickable="true"
+                android:onClick="chartsup"
+                />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:orientation="horizontal"
+                android:id="@+id/albums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="8dp"
+                />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+
+
+
+
+</FrameLayout>
